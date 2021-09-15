@@ -21,9 +21,9 @@
     PrivateData          = @{
         PSData = @{
             Tags                       = @('powershell', 'core', 'posh', 'pwsh', 'psd1', 'configuration', 'data', 'file')
-            LicenseUri                 = ''
+            LicenseUri                 = 'https://www.gnu.org/licenses/gpl-3.0.en.html'
             ProjectUri                 = 'https://github.com/SupernautSFX/PS.Config'
-            IconUri                    = ''
+            IconUri                    = 'https://github.com/SupernautSFX/PoSh-PSD1-Configuration/blob/master/assets/psconfig.png'
             ReleaseNotes               = ''
             PreRelease                 = ''
             RequireLicenseAcceptance   = $false
