@@ -11,7 +11,7 @@ CATCH {
 # $CLASSES = @(Get-ChildItem -Path $PSScriptRoot\src\Classes -Recurse -Filter "*.ps1") | Sort-Object Name
 $PRIVATE = @(Get-ChildItem -Path $PSScriptRoot\src\Private -Recurse -Filter "*.ps1") | Sort-Object Name
 $PUBLIC = @(Get-ChildItem -Path $PSScriptRoot\src\Public -Recurse -Filter "*.ps1") | Sort-Object Name
-$Script:CONFIGURATION = @(Get-ChildItem -Path $PSScriptRoot\.config -Recurse -Filter "*.ps1") | Sort-Object Name
+$Script:CONFIGURATION = @(Get-ChildItem -Path $PSScriptRoot\src\Private\.config -Recurse -Filter "*.ps1") | Sort-Object Name
 
 <# ForEach ($Class in $CLASSES) {
     TRY {
