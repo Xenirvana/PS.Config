@@ -18,13 +18,13 @@ $PUBLIC = @(Get-ChildItem -Path $PSScriptRoot\Public -Recurse -Filter "*.ps1") |
     }
 } #>
 
-ForEach ($File in $PRIVATE) {
+ForEach ($Function in $PRIVATE) {
     TRY {
-        . $File.FullName
-        Write-Verbose -Message ("Successfully loaded Internal Function/Script {0}" -F $File.FullName)
+        . $Function.FullName
+        Write-Verbose -Message ("Successfully loaded Internal Function/Script {0}" -F $Function.FullName)
     }
     CATCH {
-        Write-Error -Message ("Failure to load Internal Function/Script {0}: {1}" -F $File.FullName, $_)
+        Write-Error -Message ("Failure to load Internal Function/Script {0}: {1}" -F $Function.FullName, $_)
     }
 }
 
